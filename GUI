@@ -1,0 +1,25 @@
+from tkinter import *
+#imports all of Tkinter 
+window = Tk()
+ # window is just the variable i chose, it can be anything # GUI that created a blank window 
+def randomfunction(): 
+    print("turtle") 
+#random function for later 
+topframe = Frame(window)
+topframe .pack(side=TOP) 
+bottomframe = Frame(window)
+bottomframe.pack(side=BOTTOM) 
+#puts a frame in the window that we can put stuff in 
+text = Label(topframe, text="wrdz")
+#makes a text box text.pack() 
+text2 = Label(bottomframe, text="wrdz")
+text2.pack() 
+button1 = Button(topframe, text="Button 1", fg="red", command=randomfunction)
+# this button runs that random function up top ^^^ button2 = Button(topframe, text="Button 2", fg="blue") button3 = Button(topframe, text="Button 3", fg="green") 
+button4 = Button(bottomframe, text="CLICK ME I DARE YOU", fg="black") 
+# text is what appears on the button fg is text color and top frame puts it in topframe 
+button1.pack(side=LEFT)
+button2.pack(side=LEFT) 
+button3.pack(side=LEFT) 
+button4.pack()
+ # you have to pack it because all i did was create them, now we have to put them in there # the paramiter in pack puts the buttons in # the top frame beside each other window.mainloop() # this makes the window there until you close it 
